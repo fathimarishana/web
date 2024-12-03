@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>bulb on/off</title>
+</head>
+<body>
+<h3>click to turn the bulb is on/off</h3>
+<img id="bulb" src="/home/mca/Desktop/bulboff.jpeg" width ="100" alt="bulb">
+<button id="turnOnBtn">Turn on</button>
+<button id="turnOffBtn">Turn off</button>
+<script>
+        const bulb = document.getElementById("bulb");
+        const turnOffBtn = document.getElementById("turnOffBtn");
+        const turnOnBtn = document.getElementById("turnOnBtn");
+        function turnOnLight(){
+          bulb.src = "/home/mca/Desktop/rish/bulbon.jpeg";
+}
+        function turnOffLight(){
+          bulb.src = "/home/mca/Desktop/bulboff.jpeg";
+}
+        turnOffBtn.addEventListener("click",turnOffLight);
+        turnOnBtn.addEventListener("click",turnOnLight)
+
+</script>
+</body>
+</html>
